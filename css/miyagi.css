@@ -1,0 +1,12 @@
+h1 {
+    background-image: url('../仙台駅写真.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    padding: 80px 40px;
+    /* 上下に80px、左右に40pxの余白 */
+    margin-bottom: 30px;
+    /* 下にスペースを追加 */
+    text-align: center;
+}
