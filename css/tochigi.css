@@ -1,3 +1,13 @@
 h1 {
     color: #000;
 }
+
+h2 {
+    background-color: #ccccee;
+    padding: 5px;
+}
+
+h3 {
+    background-color: #cccc;
+    padding: 2px;
+}
