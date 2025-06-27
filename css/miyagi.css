@@ -36,3 +36,31 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.nanakita-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.nanakita-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.nanakita-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.nanakita-image {
+    flex: 1;
+}
+
+.nanakita-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
