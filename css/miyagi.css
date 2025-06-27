@@ -1,12 +1,38 @@
 h1 {
-    background-image: url('../仙台駅写真.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../仙台駅写真.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(255, 255, 255);
     padding: 80px 40px;
-    /* 上下に80px、左右に40pxの余白 */
     margin-bottom: 30px;
-    /* 下にスペースを追加 */
     text-align: center;
+}
+
+
+/* セクション全体を横並びにする */
+.section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* テキスト部分のスタイル */
+.text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* 画像部分のスタイル */
+.image {
+    flex: 1;
+}
+
+/* 画像の見た目を整える */
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
