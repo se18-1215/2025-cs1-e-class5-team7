@@ -20,11 +20,22 @@ h3 {
 }
 
 .sidebar {
+    position: fixed;
+    /* これでスクロールしても固定される */
+    top: 0;
+    /* 画面の上端に固定 */
+    left: 0;
+    /* 画面の左端に固定 */
     width: 150px;
+    height: 100vh;
+    /* 画面の高さに合わせる */
     background: #f5f5f5;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
+    /* 内容が多い場合スクロール可能にする */
 }
+
 
 .main-content {
     flex: 1;
@@ -41,4 +52,11 @@ body {
 
 .coment {
     font-size: 12px;
+}
+
+.main-content {
+    flex: 1;
+    /* 残り幅を占有 */
+    padding: 20px;
+    box-sizing: border-box;
 }
