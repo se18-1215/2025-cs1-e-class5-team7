@@ -48,12 +48,12 @@ body {
 
 /* スライドごとに背景画像と開始タイミングを変える */
 .slide1 {
-    background-image: url('22857923_m.jpg');
+    background-image: url('宇都宮 大通り.jpg');
     animation-delay: 0s;
 }
 
 .slide2 {
-    background-image: url('七北田公園.jpg');
+    background-image: url('');
     animation-delay: 5s;
 }
 
