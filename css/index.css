@@ -33,61 +33,74 @@ body {
     overflow: hidden;
 }
 
-/* ●スライド画像用のdiv */
-.slides .slide {
+/*スライドショー*/
+.hero {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.slides {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: slideFade 15s infinite;
+    animation: slideShow 9s infinite ease-in-out;
 }
 
-/* スライドごとに背景画像と開始タイミングを変える */
 .slide1 {
-    background-image: url('宇都宮 大通り.jpg');
+    background-image: url('宇都宮\ 大通り.jpg');
     animation-delay: 0s;
 }
 
 .slide2 {
-    background-image: url('');
-    animation-delay: 5s;
+    background-image: url('仙台駅写真.jpg');
+    animation-delay: 3s;
 }
 
 .slide3 {
-    background-image: url('仙台駅写真.jpg');
-    animation-delay: 10s;
+    background-image: url('22857923_m.jpg');
+    animation-delay: 6s;
 }
 
-/* フェードイン／フェードアウトのキーアニメーション
-   1スライドあたり表示時間およそ５秒＋フェード前後各１秒 */
-@keyframes slideFade {
+@keyframes slideShow {
     0% {
         opacity: 0;
     }
 
-    6.67% {
+    5% {
         opacity: 1;
     }
 
-    /* 0→6.67% でフェードイン */
-    26.67% {
+    30% {
         opacity: 1;
     }
 
-    /* 6.67→26.67% の間は表示 */
-    33.33% {
+    35% {
         opacity: 0;
     }
 
-    /* 26.67→33.33% でフェードアウト */
     100% {
         opacity: 0;
     }
 }
+
+
+
 
 /* ●h1 タイトルを手前に表示 */
 .hero h1 {
